@@ -73,52 +73,7 @@ assert title.contains("YouTube")
 ```
 
 This script will launch a WebDriver which tries to connect to the Chrome at the IP address 127.0.0.1 with port #9222.
-
-With the Chrome has been already opened by the above script, I ran the test case. I saw the browser navigated to "YouTube". I got the following output in the console.
-
-```
-2025-01-05 09:48:09.105 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
-2025-01-05 09:48:09.108 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/interactWithAnExistingBrowserSession
-2025-01-05 09:48:09.843 DEBUG t.interactWithAnExistingBrowserSession   - 1: System.setProperty("webdriver.chrome.driver", getChromeDriverPath())
-2025-01-05 09:48:09.924 DEBUG t.interactWithAnExistingBrowserSession   - 2: options = new org.openqa.selenium.chrome.ChromeOptions()
-2025-01-05 09:48:09.974 DEBUG t.interactWithAnExistingBrowserSession   - 3: options.setExperimentalOption("debuggerAddress", "127.0.0.1:9222")
-2025-01-05 09:48:09.986 DEBUG t.interactWithAnExistingBrowserSession   - 4: driver = new org.openqa.selenium.chrome.ChromeDriver(options)
-Starting ChromeDriver 131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}) on port 32465
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 32465.
-1月 05, 2025 9:48:11 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
-情報: Detected dialect: W3C
-2025-01-05 09:48:11.736 DEBUG t.interactWithAnExistingBrowserSession   - 5: changeWebDriver(driver)
-2025-01-05 09:48:11.750 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 8930f9634147bc735b1979dfe7c9bece
-2025-01-05 09:48:11.777 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 131.0.0.0
-2025-01-05 09:48:11.780 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
-2025-01-05 09:48:11.782 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 3.141.59
-2025-01-05 09:48:11.799 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
-2025-01-05 09:48:11.834 DEBUG t.interactWithAnExistingBrowserSession   - 6: openBrowser("https://www.youtube.com/")
-2025-01-05 09:48:12.124 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
-2025-01-05 09:48:12.145 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
-1月 05, 2025 9:48:12 午前 org.openqa.selenium.remote.DesiredCapabilities chrome
-情報: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-2025-01-05 09:48:12.164 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
-Starting ChromeDriver 131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}) on port 26396
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 26396.
-1月 05, 2025 9:48:14 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
-情報: Detected dialect: W3C
-2025-01-05 09:48:14.051 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 667b8d6cd1f7e6075930884bb3e4c421
-2025-01-05 09:48:14.261 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 131.0.0.0
-2025-01-05 09:48:14.272 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
-2025-01-05 09:48:14.293 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 3.141.59
-2025-01-05 09:48:14.325 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
-2025-01-05 09:48:20.605 DEBUG t.interactWithAnExistingBrowserSession   - 7: title = getWindowTitle()
-2025-01-05 09:48:21.027 DEBUG t.interactWithAnExistingBrowserSession   - 8: assert title.contains("YouTube")
-2025-01-05 09:48:21.083 DEBUG t.interactWithAnExistingBrowserSession   - 9: closeBrowser()
-2025-01-05 09:48:21.607 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/interactWithAnExistingBrowserSession
-```
-
-The test case ran OK. The test case sucessfully verified if the Chrome is displaying YouTube.
+The test case ran OK. The test case sucessfully verified that the Chrome is displaying YouTube.
 
 
 ### Conclusion: What mdu_kay7 needs to do?
