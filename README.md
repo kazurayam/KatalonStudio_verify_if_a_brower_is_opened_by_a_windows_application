@@ -118,7 +118,8 @@ ChromeDriver was started successfully on port 26396.
 2025-01-05 09:48:21.607 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/interactWithAnExistingBrowserSession
 ```
 
-The test case ran successfully.
+The test case ran OK. The test case sucessfully verified if the Chrome is displaying YouTube.
+
 
 ### Conclusion: What mdu_kay7 needs to do?
 

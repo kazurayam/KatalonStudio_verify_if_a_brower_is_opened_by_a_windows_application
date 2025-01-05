@@ -11,7 +11,7 @@ options.setExperimentalOption("debuggerAddress", "127.0.0.1:9222")
 WebDriver driver = new ChromeDriver(options)
 DriverFactory.changeWebDriver(driver)
 
-WebUI.openBrowser("https://www.youtube.com/")
+WebUI.navigateToUrl("https://www.youtube.com/")
 String title = WebUI.getWindowTitle()
 assert title.contains("YouTube")
 
