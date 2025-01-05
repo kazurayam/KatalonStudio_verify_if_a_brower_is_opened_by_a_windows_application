@@ -1,0 +1,3 @@
+# this shell script runs only on mac
+# this opens a Chrome browser with the remote-debugging-port opened
+open -a "Google Chrome.app" --args --remote-debugging-port=9222 --user-data-dir=$HOME/tmp/temporary-chrome-profile
