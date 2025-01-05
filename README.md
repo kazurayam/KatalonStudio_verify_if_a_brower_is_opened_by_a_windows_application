@@ -79,6 +79,8 @@ This script will launch a WebDriver which tries to connect to the Chrome at the 
 The test case ran OK. The test case sucessfully verified that the Chrome is displaying YouTube.
 
 
-### Conclusion: What does mdu_kay7 need to do?
+### Conclusion
+
+What does mdu_kay7 need to do?
 
 mdu_kay7 has to change his windows app. The app must start Chrome with `--remote-debugging-port=xxxx` and `--user-data-dir` as my shell script does. Without the port is opened by Chrome process, external processes like Katalon's test case script will never be able to communiate with the Chrome process.
