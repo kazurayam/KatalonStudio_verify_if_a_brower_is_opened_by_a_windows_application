@@ -9,11 +9,11 @@ There was a post in the Katalo Forum:
 Let me quote the full post:
 
 >I’m testing a windows application (WPF). The app has a button that opens a web browser and navigates to a specific Url. I’m having a hard time verifying that the web browser is opened and the has navigated to the correct url. Katalon doesn’t seem to recognize the web browser. I’ve tried a few options:
-
+>
 >1. com.kms.katalon.core.configuration.RunConfiguration.storeDriver
 >2. driver.switchTo().window(winHandle)
 >3. WebDriver driver = DriverFactory.getWebDriver()
-
+>
 >None of the option seem to work. Since there is no webdriver created. Is there a way to assign a webdriver to the web browser opened by the windows application?
 
 ## Solution
@@ -120,8 +120,8 @@ ChromeDriver was started successfully on port 26396.
 
 The test case ran successfully.
 
-### Conclusion: What mdu_kay7 needs to do
+### Conclusion: What mdu_kay7 needs to do?
 
-He has to change his windows app. The app have to start Chrome with `--remote-debugging-port=xxxx` as my shell script does. Without the port is opened by Chrome process, external processes like Katalon's test case script will never be able to communiate with the Chrome process.
+mdu_kay7 has to change his windows app. The app have to start Chrome with `--remote-debugging-port=xxxx` as my shell script does. Without the port is opened by Chrome process, external processes like Katalon's test case script will never be able to communiate with the Chrome process.
 
 
