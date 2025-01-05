@@ -41,7 +41,10 @@ I made a bash shell script `<projectDir>/open_chrome_with_remotedebuggingport`
 open -a "Google Chrome.app" --args --remote-debugging-port=9222 --user-data-dir=$HOME/tmp/temporary-chrome-profile
 ```
 
-I did
+Please note that both of `--remote-debugging-port` and `--user-data-dir` are required.
+You need to create the folder as the `--user-data-dir` before you start Chrome.
+
+I executed the shell script:
 
 ```
 $ chmod +x open_chrome_with_remotedebuggingport
@@ -76,7 +79,7 @@ This script will launch a WebDriver which tries to connect to the Chrome at the 
 The test case ran OK. The test case sucessfully verified that the Chrome is displaying YouTube.
 
 
-### Conclusion: What mdu_kay7 needs to do?
+### Conclusion: What does mdu_kay7 need to do?
 
 mdu_kay7 has to change his windows app. The app have to start Chrome with `--remote-debugging-port=xxxx` as my shell script does. Without the port is opened by Chrome process, external processes like Katalon's test case script will never be able to communiate with the Chrome process.
 
